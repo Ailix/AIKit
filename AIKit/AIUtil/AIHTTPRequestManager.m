@@ -1,7 +1,28 @@
-
+//
+//  AIDataManager.m
+//  Block01
+//
+//  Created by Ailix on 14-6-11.
+//  Copyright (c) 2014年 NC. All rights reserved.
+//
 
 #import "AIHTTPRequestManager.h"
-#import <UIKit/UIKit.h>
+@import UIKit;
+
+
+@interface AIHTTPRequest ()
+
+/** 请求的地址 */
+@property (nonatomic,copy)NSString *requestUrl;
+
+/**
+ *  开始请求
+ */
+- (void)startRequest;
+
+@end
+
+
 @implementation AIHTTPRequest
 {
     NSMutableData *_mData;
@@ -12,6 +33,7 @@
     self.finishBlock = nil;
     self.failedBlock = nil;
     self.requestUrl = nil;
+    _mData = nil;
 }
 
 - (void)startRequest
@@ -40,7 +62,6 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-//    NSLog(@"error:%@",error);
     self.failedBlock(error);
 }
 
@@ -48,24 +69,18 @@
 
 @implementation AIHTTPRequestManager
 
-static AIHTTPRequestManager *g_dataManager = nil;
 
-- (void)dealloc
-{
-    g_dataManager = nil;
-}
 
 + (id)sharedManager
 {
+    static AIHTTPRequestManager *_sharedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        if (g_dataManager == nil) {
-            g_dataManager = [[AIHTTPRequestManager alloc] init];
-        }
+        _sharedManager = [[AIHTTPRequestManager alloc] init];
     });
-    return g_dataManager;
+    return _sharedManager;
 }
-- (void)requestWithUrl:(NSString *)urlStr finish:(FinishBlock)aFinishBlock failed:(FailedBlock)aFailedBlock
+- (void)requestWithUrl:(NSString *)urlStr finish:(AIHTTPFinishBlock)aFinishBlock failed:(AIHTTPFailedBlock)aFailedBlock
 {
     AIHTTPRequest *request = [[AIHTTPRequest alloc] init];
     request.requestUrl = urlStr;

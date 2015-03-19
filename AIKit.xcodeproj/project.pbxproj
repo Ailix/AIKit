@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580312681ABAFB6600D22DB7 /* NSDate+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */; };
+		580312691ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803124E1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m */; };
+		5803126A1ABAFB6600D22DB7 /* NSString+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */; };
+		5803126B1ABAFB6600D22DB7 /* UIButton+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312521ABAFB6600D22DB7 /* UIButton+AIExtension.m */; };
+		5803126C1ABAFB6600D22DB7 /* UIColor+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312541ABAFB6600D22DB7 /* UIColor+AIExtension.m */; };
+		5803126D1ABAFB6600D22DB7 /* UILabel+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312561ABAFB6600D22DB7 /* UILabel+AIExtension.m */; };
+		5803126E1ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312581ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m */; };
+		5803126F1ABAFB6600D22DB7 /* UIView+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803125A1ABAFB6600D22DB7 /* UIView+AIExtension.m */; };
+		580312701ABAFB6600D22DB7 /* AIHTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803125F1ABAFB6600D22DB7 /* AIHTTPRequestManager.m */; };
+		580312711ABAFB6600D22DB7 /* AIPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312611ABAFB6600D22DB7 /* AIPageControl.m */; };
+		580312721ABAFB6600D22DB7 /* AITranslucentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312631ABAFB6600D22DB7 /* AITranslucentLabel.m */; };
+		580312731ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312651ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m */; };
+		580312741ABAFB6600D22DB7 /* AIUserDefaultFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312671ABAFB6600D22DB7 /* AIUserDefaultFacade.m */; };
 		58F4169B1A332011003FDD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4169A1A332011003FDD20 /* main.m */; };
 		58F4169E1A332011003FDD20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4169D1A332011003FDD20 /* AppDelegate.m */; };
 		58F416A11A332011003FDD20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416A01A332011003FDD20 /* ViewController.m */; };
@@ -14,24 +27,6 @@
 		58F416A61A332011003FDD20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F416A51A332011003FDD20 /* Images.xcassets */; };
 		58F416A91A332011003FDD20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F416A71A332011003FDD20 /* LaunchScreen.xib */; };
 		58F416B51A332012003FDD20 /* AIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416B41A332012003FDD20 /* AIKitTests.m */; };
-		58F416CD1A3320CC003FDD20 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416C01A3320CC003FDD20 /* NSDate+Category.m */; };
-		58F416CE1A3320CC003FDD20 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416C21A3320CC003FDD20 /* NSDateFormatter+Category.m */; };
-		58F416CF1A3320CC003FDD20 /* NSString+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416C41A3320CC003FDD20 /* NSString+AIExtension.m */; };
-		58F416D01A3320CC003FDD20 /* UIColor+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416C61A3320CC003FDD20 /* UIColor+AIExtension.m */; };
-		58F416D11A3320CC003FDD20 /* UILabel+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416C81A3320CC003FDD20 /* UILabel+AIExtension.m */; };
-		58F416D21A3320CC003FDD20 /* UIStoryboard+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416CA1A3320CC003FDD20 /* UIStoryboard+AIExtension.m */; };
-		58F416D31A3320CC003FDD20 /* UIView+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416CC1A3320CC003FDD20 /* UIView+AIExtension.m */; };
-		58F416ED1A332458003FDD20 /* AIBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416D61A332458003FDD20 /* AIBaseScrollView.m */; };
-		58F416EE1A332458003FDD20 /* AIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416D81A332458003FDD20 /* AIButton.m */; };
-		58F416EF1A332458003FDD20 /* AICycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416DA1A332458003FDD20 /* AICycleScrollView.m */; };
-		58F416F01A332458003FDD20 /* AIHTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416DC1A332458003FDD20 /* AIHTTPRequestManager.m */; };
-		58F416F11A332458003FDD20 /* AIDock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416DE1A332458003FDD20 /* AIDock.m */; };
-		58F416F21A332458003FDD20 /* AIDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416E01A332458003FDD20 /* AIDockItem.m */; };
-		58F416F31A332458003FDD20 /* AIImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416E21A332458003FDD20 /* AIImageManager.m */; };
-		58F416F41A332458003FDD20 /* AIPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416E41A332458003FDD20 /* AIPageControl.m */; };
-		58F416F51A332458003FDD20 /* AISlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416E61A332458003FDD20 /* AISlideSwitchView.m */; };
-		58F416F61A332458003FDD20 /* AITranslucentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416E81A332458003FDD20 /* AITranslucentLabel.m */; };
-		58F416F81A332458003FDD20 /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F416EC1A332458003FDD20 /* UIImageView+WebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +40,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5803124A1ABAFB6600D22DB7 /* AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIExtension.h; sourceTree = "<group>"; };
+		5803124B1ABAFB6600D22DB7 /* NSDate+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AIExtension.h"; sourceTree = "<group>"; };
+		5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AIExtension.m"; sourceTree = "<group>"; };
+		5803124D1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+AIExtension.h"; sourceTree = "<group>"; };
+		5803124E1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+AIExtension.m"; sourceTree = "<group>"; };
+		5803124F1ABAFB6600D22DB7 /* NSString+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AIExtension.h"; sourceTree = "<group>"; };
+		580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AIExtension.m"; sourceTree = "<group>"; };
+		580312511ABAFB6600D22DB7 /* UIButton+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AIExtension.h"; sourceTree = "<group>"; };
+		580312521ABAFB6600D22DB7 /* UIButton+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AIExtension.m"; sourceTree = "<group>"; };
+		580312531ABAFB6600D22DB7 /* UIColor+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AIExtension.h"; sourceTree = "<group>"; };
+		580312541ABAFB6600D22DB7 /* UIColor+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AIExtension.m"; sourceTree = "<group>"; };
+		580312551ABAFB6600D22DB7 /* UILabel+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AIExtension.h"; sourceTree = "<group>"; };
+		580312561ABAFB6600D22DB7 /* UILabel+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AIExtension.m"; sourceTree = "<group>"; };
+		580312571ABAFB6600D22DB7 /* UIStoryboard+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+AIExtension.h"; sourceTree = "<group>"; };
+		580312581ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+AIExtension.m"; sourceTree = "<group>"; };
+		580312591ABAFB6600D22DB7 /* UIView+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AIExtension.h"; sourceTree = "<group>"; };
+		5803125A1ABAFB6600D22DB7 /* UIView+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AIExtension.m"; sourceTree = "<group>"; };
+		5803125C1ABAFB6600D22DB7 /* AIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMacro.h; sourceTree = "<group>"; };
+		5803125E1ABAFB6600D22DB7 /* AIHTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHTTPRequestManager.h; sourceTree = "<group>"; };
+		5803125F1ABAFB6600D22DB7 /* AIHTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHTTPRequestManager.m; sourceTree = "<group>"; };
+		580312601ABAFB6600D22DB7 /* AIPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPageControl.h; sourceTree = "<group>"; };
+		580312611ABAFB6600D22DB7 /* AIPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPageControl.m; sourceTree = "<group>"; };
+		580312621ABAFB6600D22DB7 /* AITranslucentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITranslucentLabel.h; sourceTree = "<group>"; };
+		580312631ABAFB6600D22DB7 /* AITranslucentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITranslucentLabel.m; sourceTree = "<group>"; };
+		580312641ABAFB6600D22DB7 /* AITranslucentLabelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITranslucentLabelBuilder.h; sourceTree = "<group>"; };
+		580312651ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITranslucentLabelBuilder.m; sourceTree = "<group>"; };
+		580312661ABAFB6600D22DB7 /* AIUserDefaultFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUserDefaultFacade.h; sourceTree = "<group>"; };
+		580312671ABAFB6600D22DB7 /* AIUserDefaultFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUserDefaultFacade.m; sourceTree = "<group>"; };
 		58F416951A332011003FDD20 /* AIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F416991A332011003FDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F4169A1A332011003FDD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,43 +81,6 @@
 		58F416AE1A332012003FDD20 /* AIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F416B31A332012003FDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F416B41A332012003FDD20 /* AIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIKitTests.m; sourceTree = "<group>"; };
-		58F416BF1A3320CC003FDD20 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		58F416C01A3320CC003FDD20 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
-		58F416C11A3320CC003FDD20 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
-		58F416C21A3320CC003FDD20 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
-		58F416C31A3320CC003FDD20 /* NSString+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AIExtension.h"; sourceTree = "<group>"; };
-		58F416C41A3320CC003FDD20 /* NSString+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AIExtension.m"; sourceTree = "<group>"; };
-		58F416C51A3320CC003FDD20 /* UIColor+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AIExtension.h"; sourceTree = "<group>"; };
-		58F416C61A3320CC003FDD20 /* UIColor+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AIExtension.m"; sourceTree = "<group>"; };
-		58F416C71A3320CC003FDD20 /* UILabel+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AIExtension.h"; sourceTree = "<group>"; };
-		58F416C81A3320CC003FDD20 /* UILabel+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AIExtension.m"; sourceTree = "<group>"; };
-		58F416C91A3320CC003FDD20 /* UIStoryboard+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+AIExtension.h"; sourceTree = "<group>"; };
-		58F416CA1A3320CC003FDD20 /* UIStoryboard+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+AIExtension.m"; sourceTree = "<group>"; };
-		58F416CB1A3320CC003FDD20 /* UIView+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AIExtension.h"; sourceTree = "<group>"; };
-		58F416CC1A3320CC003FDD20 /* UIView+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AIExtension.m"; sourceTree = "<group>"; };
-		58F416D51A332458003FDD20 /* AIBaseScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBaseScrollView.h; sourceTree = "<group>"; };
-		58F416D61A332458003FDD20 /* AIBaseScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBaseScrollView.m; sourceTree = "<group>"; };
-		58F416D71A332458003FDD20 /* AIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIButton.h; sourceTree = "<group>"; };
-		58F416D81A332458003FDD20 /* AIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIButton.m; sourceTree = "<group>"; };
-		58F416D91A332458003FDD20 /* AICycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICycleScrollView.h; sourceTree = "<group>"; };
-		58F416DA1A332458003FDD20 /* AICycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AICycleScrollView.m; sourceTree = "<group>"; };
-		58F416DB1A332458003FDD20 /* AIHTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHTTPRequestManager.h; sourceTree = "<group>"; };
-		58F416DC1A332458003FDD20 /* AIHTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIHTTPRequestManager.m; sourceTree = "<group>"; };
-		58F416DD1A332458003FDD20 /* AIDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDock.h; sourceTree = "<group>"; };
-		58F416DE1A332458003FDD20 /* AIDock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDock.m; sourceTree = "<group>"; };
-		58F416DF1A332458003FDD20 /* AIDockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDockItem.h; sourceTree = "<group>"; };
-		58F416E01A332458003FDD20 /* AIDockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDockItem.m; sourceTree = "<group>"; };
-		58F416E11A332458003FDD20 /* AIImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageManager.h; sourceTree = "<group>"; };
-		58F416E21A332458003FDD20 /* AIImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIImageManager.m; sourceTree = "<group>"; };
-		58F416E31A332458003FDD20 /* AIPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPageControl.h; sourceTree = "<group>"; };
-		58F416E41A332458003FDD20 /* AIPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPageControl.m; sourceTree = "<group>"; };
-		58F416E51A332458003FDD20 /* AISlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISlideSwitchView.h; sourceTree = "<group>"; };
-		58F416E61A332458003FDD20 /* AISlideSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISlideSwitchView.m; sourceTree = "<group>"; };
-		58F416E71A332458003FDD20 /* AITranslucentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITranslucentLabel.h; sourceTree = "<group>"; };
-		58F416E81A332458003FDD20 /* AITranslucentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITranslucentLabel.m; sourceTree = "<group>"; };
-		58F416EB1A332458003FDD20 /* UIImageView+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebImage.h"; sourceTree = "<group>"; };
-		58F416EC1A332458003FDD20 /* UIImageView+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebImage.m"; sourceTree = "<group>"; };
-		58F416F91A332472003FDD20 /* AIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +101,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580312491ABAFB6600D22DB7 /* AIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5803124A1ABAFB6600D22DB7 /* AIExtension.h */,
+				5803124B1ABAFB6600D22DB7 /* NSDate+AIExtension.h */,
+				5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */,
+				5803124D1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.h */,
+				5803124E1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m */,
+				5803124F1ABAFB6600D22DB7 /* NSString+AIExtension.h */,
+				580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */,
+				580312531ABAFB6600D22DB7 /* UIColor+AIExtension.h */,
+				580312541ABAFB6600D22DB7 /* UIColor+AIExtension.m */,
+				580312511ABAFB6600D22DB7 /* UIButton+AIExtension.h */,
+				580312521ABAFB6600D22DB7 /* UIButton+AIExtension.m */,
+				580312551ABAFB6600D22DB7 /* UILabel+AIExtension.h */,
+				580312561ABAFB6600D22DB7 /* UILabel+AIExtension.m */,
+				580312571ABAFB6600D22DB7 /* UIStoryboard+AIExtension.h */,
+				580312581ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m */,
+				580312591ABAFB6600D22DB7 /* UIView+AIExtension.h */,
+				5803125A1ABAFB6600D22DB7 /* UIView+AIExtension.m */,
+			);
+			path = AIExtension;
+			sourceTree = "<group>";
+		};
+		5803125B1ABAFB6600D22DB7 /* AIMacro */ = {
+			isa = PBXGroup;
+			children = (
+				5803125C1ABAFB6600D22DB7 /* AIMacro.h */,
+			);
+			path = AIMacro;
+			sourceTree = "<group>";
+		};
+		5803125D1ABAFB6600D22DB7 /* AIUtil */ = {
+			isa = PBXGroup;
+			children = (
+				5803125E1ABAFB6600D22DB7 /* AIHTTPRequestManager.h */,
+				5803125F1ABAFB6600D22DB7 /* AIHTTPRequestManager.m */,
+				580312601ABAFB6600D22DB7 /* AIPageControl.h */,
+				580312611ABAFB6600D22DB7 /* AIPageControl.m */,
+				580312621ABAFB6600D22DB7 /* AITranslucentLabel.h */,
+				580312631ABAFB6600D22DB7 /* AITranslucentLabel.m */,
+				580312641ABAFB6600D22DB7 /* AITranslucentLabelBuilder.h */,
+				580312651ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m */,
+				580312661ABAFB6600D22DB7 /* AIUserDefaultFacade.h */,
+				580312671ABAFB6600D22DB7 /* AIUserDefaultFacade.m */,
+			);
+			path = AIUtil;
+			sourceTree = "<group>";
+		};
 		58F4168C1A332011003FDD20 = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +171,9 @@
 		58F416971A332011003FDD20 /* AIKit */ = {
 			isa = PBXGroup;
 			children = (
-				58F416D41A332434003FDD20 /* AIUtil */,
-				58F416BE1A3320CB003FDD20 /* AIExtension */,
+				580312491ABAFB6600D22DB7 /* AIExtension */,
+				5803125B1ABAFB6600D22DB7 /* AIMacro */,
+				5803125D1ABAFB6600D22DB7 /* AIUtil */,
 				58F4169C1A332011003FDD20 /* AppDelegate.h */,
 				58F4169D1A332011003FDD20 /* AppDelegate.m */,
 				58F4169F1A332011003FDD20 /* ViewController.h */,
@@ -174,57 +210,6 @@
 				58F416B31A332012003FDD20 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		58F416BE1A3320CB003FDD20 /* AIExtension */ = {
-			isa = PBXGroup;
-			children = (
-				58F416BF1A3320CC003FDD20 /* NSDate+Category.h */,
-				58F416C01A3320CC003FDD20 /* NSDate+Category.m */,
-				58F416C11A3320CC003FDD20 /* NSDateFormatter+Category.h */,
-				58F416C21A3320CC003FDD20 /* NSDateFormatter+Category.m */,
-				58F416C31A3320CC003FDD20 /* NSString+AIExtension.h */,
-				58F416C41A3320CC003FDD20 /* NSString+AIExtension.m */,
-				58F416C51A3320CC003FDD20 /* UIColor+AIExtension.h */,
-				58F416C61A3320CC003FDD20 /* UIColor+AIExtension.m */,
-				58F416C71A3320CC003FDD20 /* UILabel+AIExtension.h */,
-				58F416C81A3320CC003FDD20 /* UILabel+AIExtension.m */,
-				58F416C91A3320CC003FDD20 /* UIStoryboard+AIExtension.h */,
-				58F416CA1A3320CC003FDD20 /* UIStoryboard+AIExtension.m */,
-				58F416CB1A3320CC003FDD20 /* UIView+AIExtension.h */,
-				58F416CC1A3320CC003FDD20 /* UIView+AIExtension.m */,
-			);
-			path = AIExtension;
-			sourceTree = "<group>";
-		};
-		58F416D41A332434003FDD20 /* AIUtil */ = {
-			isa = PBXGroup;
-			children = (
-				58F416D51A332458003FDD20 /* AIBaseScrollView.h */,
-				58F416D61A332458003FDD20 /* AIBaseScrollView.m */,
-				58F416D91A332458003FDD20 /* AICycleScrollView.h */,
-				58F416DA1A332458003FDD20 /* AICycleScrollView.m */,
-				58F416DD1A332458003FDD20 /* AIDock.h */,
-				58F416DE1A332458003FDD20 /* AIDock.m */,
-				58F416DF1A332458003FDD20 /* AIDockItem.h */,
-				58F416E01A332458003FDD20 /* AIDockItem.m */,
-				58F416D71A332458003FDD20 /* AIButton.h */,
-				58F416D81A332458003FDD20 /* AIButton.m */,
-				58F416E31A332458003FDD20 /* AIPageControl.h */,
-				58F416E41A332458003FDD20 /* AIPageControl.m */,
-				58F416E51A332458003FDD20 /* AISlideSwitchView.h */,
-				58F416E61A332458003FDD20 /* AISlideSwitchView.m */,
-				58F416E71A332458003FDD20 /* AITranslucentLabel.h */,
-				58F416E81A332458003FDD20 /* AITranslucentLabel.m */,
-				58F416EB1A332458003FDD20 /* UIImageView+WebImage.h */,
-				58F416EC1A332458003FDD20 /* UIImageView+WebImage.m */,
-				58F416DB1A332458003FDD20 /* AIHTTPRequestManager.h */,
-				58F416DC1A332458003FDD20 /* AIHTTPRequestManager.m */,
-				58F416E11A332458003FDD20 /* AIImageManager.h */,
-				58F416E21A332458003FDD20 /* AIImageManager.m */,
-				58F416F91A332472003FDD20 /* AIUtil.h */,
-			);
-			path = AIUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,27 +312,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58F416F31A332458003FDD20 /* AIImageManager.m in Sources */,
-				58F416D11A3320CC003FDD20 /* UILabel+AIExtension.m in Sources */,
-				58F416F21A332458003FDD20 /* AIDockItem.m in Sources */,
-				58F416F01A332458003FDD20 /* AIHTTPRequestManager.m in Sources */,
-				58F416CD1A3320CC003FDD20 /* NSDate+Category.m in Sources */,
-				58F416D31A3320CC003FDD20 /* UIView+AIExtension.m in Sources */,
-				58F416EE1A332458003FDD20 /* AIButton.m in Sources */,
-				58F416D21A3320CC003FDD20 /* UIStoryboard+AIExtension.m in Sources */,
-				58F416F61A332458003FDD20 /* AITranslucentLabel.m in Sources */,
-				58F416F11A332458003FDD20 /* AIDock.m in Sources */,
-				58F416CF1A3320CC003FDD20 /* NSString+AIExtension.m in Sources */,
-				58F416EF1A332458003FDD20 /* AICycleScrollView.m in Sources */,
+				580312681ABAFB6600D22DB7 /* NSDate+AIExtension.m in Sources */,
+				580312711ABAFB6600D22DB7 /* AIPageControl.m in Sources */,
+				580312741ABAFB6600D22DB7 /* AIUserDefaultFacade.m in Sources */,
+				5803126B1ABAFB6600D22DB7 /* UIButton+AIExtension.m in Sources */,
+				5803126A1ABAFB6600D22DB7 /* NSString+AIExtension.m in Sources */,
+				580312701ABAFB6600D22DB7 /* AIHTTPRequestManager.m in Sources */,
+				580312731ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m in Sources */,
 				58F416A11A332011003FDD20 /* ViewController.m in Sources */,
-				58F416ED1A332458003FDD20 /* AIBaseScrollView.m in Sources */,
-				58F416F51A332458003FDD20 /* AISlideSwitchView.m in Sources */,
-				58F416D01A3320CC003FDD20 /* UIColor+AIExtension.m in Sources */,
-				58F416CE1A3320CC003FDD20 /* NSDateFormatter+Category.m in Sources */,
+				5803126E1ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m in Sources */,
 				58F4169E1A332011003FDD20 /* AppDelegate.m in Sources */,
-				58F416F41A332458003FDD20 /* AIPageControl.m in Sources */,
+				580312721ABAFB6600D22DB7 /* AITranslucentLabel.m in Sources */,
 				58F4169B1A332011003FDD20 /* main.m in Sources */,
-				58F416F81A332458003FDD20 /* UIImageView+WebImage.m in Sources */,
+				5803126F1ABAFB6600D22DB7 /* UIView+AIExtension.m in Sources */,
+				580312691ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m in Sources */,
+				5803126C1ABAFB6600D22DB7 /* UIColor+AIExtension.m in Sources */,
+				5803126D1ABAFB6600D22DB7 /* UILabel+AIExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +518,7 @@
 				58F416BA1A332012003FDD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58F416BB1A332012003FDD20 /* Build configuration list for PBXNativeTarget "AIKitTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +527,7 @@
 				58F416BD1A332012003FDD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

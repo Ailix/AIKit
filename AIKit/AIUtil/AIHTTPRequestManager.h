@@ -1,20 +1,26 @@
-
+//
+//  AIDataManager.h
+//  Block01
+//
+//  Created by Ailix on 14-6-11.
+//  Copyright (c) 2014年 NC. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 
-typedef void(^FinishBlock)(NSData *data);
-typedef void(^FailedBlock)(NSError *error);
+typedef void(^AIHTTPFinishBlock)(NSData *data);
+typedef void(^AIHTTPFailedBlock)(NSError *error);
 
 
 @interface AIHTTPRequest : NSObject<NSURLConnectionDataDelegate>
-/**
- *  开始请求
- */
-- (void)startRequest;
 
-@property (nonatomic,copy)NSString *requestUrl;//请求的地址
-@property (nonatomic,copy)FinishBlock finishBlock;//请求成功的代码块
-@property (nonatomic,copy)FailedBlock failedBlock;//请求失败的代码块
+
+/** 请求成功的代码块 */
+@property (nonatomic,copy)AIHTTPFinishBlock finishBlock;
+
+/** 请求失败的代码块 */
+@property (nonatomic,copy)AIHTTPFailedBlock failedBlock;
+
 @end
 
 @interface AIHTTPRequestManager : NSObject
@@ -32,6 +38,6 @@ typedef void(^FailedBlock)(NSError *error);
  *  @param aFinishBlock 请求成功的代码块
  *  @param aFailedBlock 请求失败的代码块
  */
-- (void)requestWithUrl:(NSString *)urlStr finish:(FinishBlock)aFinishBlock failed:(FailedBlock)aFailedBlock;
+- (void)requestWithUrl:(NSString *)urlStr finish:(AIHTTPFinishBlock)aFinishBlock failed:(AIHTTPFailedBlock)aFailedBlock;
 
 @end

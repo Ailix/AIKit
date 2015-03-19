@@ -1,3 +1,10 @@
+//
+//  UILabel+AIExtension.m
+//  StringSize
+//
+//  Created by alex on 14/11/12.
+//  Copyright (c) 2014年 alex. All rights reserved.
+//
 
 #import "UILabel+AIExtension.h"
 
@@ -8,7 +15,7 @@
     NSDictionary *attribute = @{NSFontAttributeName: self.font};
     
     CGSize retSize = [self.text boundingRectWithSize:size
-                                             options:
+                                             options:\
                       NSStringDrawingTruncatesLastVisibleLine |
                       NSStringDrawingUsesLineFragmentOrigin |
                       NSStringDrawingUsesFontLeading

@@ -2,109 +2,121 @@
 
 #import "AITranslucentLabel.h"
 
-static NSInteger const titleLabelTag        = 100;
-static NSInteger const translucentViewTag   = 200;
+
+@interface AITranslucentLabel ()
+
+/** 标签 */
+@property (nonatomic,strong) UILabel *label;
+
+/** 透明视图 */
+@property (nonatomic,strong) UIView *translucentView;
+
+@end
 
 
 @implementation AITranslucentLabel
 
-- (id)initWithFrame:(CGRect)frame
+
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        [self uiConfig];
+        [self configUI];
     }
     return self;
 }
 
-- (void)dealloc
+- (void)awakeFromNib
 {
-    self.font = nil;
-    self.text = nil;
-    self.textColor = nil;
+    [self configUI];
+}
+
+
+- (void)configUI
+{
+    [self addSubview:self.translucentView];
+    [self addSubview:self.label];
+    self.alphaValue = .5;
+    
+}
+
++ (instancetype)labelWithBuilder:(AITranslucentLabelBuilderBlock)builderBlock
+{
+    NSParameterAssert(builderBlock);
+    AITranslucentLabelBuilder *builder = [[AITranslucentLabelBuilder alloc] init];
+    builderBlock(builder);
+    return [builder build];
 }
 
 - (void)setText:(NSString *)text
 {
     if (_text != text) {
-        _text = [text copy];
-        UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-        titleLabel.text = _text;
-    }
-}
-
-- (void)setFont:(UIFont *)font
-{
-    if (_font != font) {
-        _font = font;
-        UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-        titleLabel.font = _font;
+        _text       = [text copy];
+        _label.text = text;
     }
 }
 
 - (void)setTextColor:(UIColor *)textColor
 {
     if (_textColor != textColor) {
-        _textColor = textColor;
-        UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-        titleLabel.textColor = _textColor;
+        _textColor       = textColor;
+        _label.textColor = textColor;
     }
 }
 
 - (void)setTextAlignment:(NSTextAlignment)textAlignment
 {
-    _textAlignment = textAlignment;
-    UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-    titleLabel.textAlignment = _textAlignment;
+    if (_textAlignment != textAlignment) {
+        _textAlignment       = textAlignment;
+        _label.textAlignment = textAlignment;
+    }
+}
+
+- (void)setFont:(UIFont *)font
+{
+    if (_font != font) {
+        _font       = font;
+        _label.font = font;
+    }
 }
 
 - (void)setAlphaValue:(CGFloat)alphaValue
 {
-    _alphaValue = alphaValue;
-     UIView *translucentView = (UIView *)[self viewWithTag:translucentViewTag];
-    translucentView.alpha = _alphaValue;
+    if (_alphaValue != alphaValue) {
+        _alphaValue            = alphaValue;
+        _translucentView.alpha = alphaValue;
+    }
 }
 
-- (void)setTitleOffsetX:(CGFloat)titleOffsetX
+- (UIView *)translucentView
 {
-    _titleOffsetX = titleOffsetX;
-    UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-    CGRect rect2 = CGRectMake(_titleOffsetX, 0.0f, self.frame.size.width - 2*_titleOffsetX, self.frame.size.height);
-    titleLabel.frame = rect2;
+    if (_translucentView == nil) {
+        _translucentView                 = [[UIView alloc] init];
+        _translucentView.backgroundColor = [UIColor blackColor];
+//        _translucentView.alpha           = 0.5;
+    }
+    return _translucentView;
 }
 
-- (void)uiConfig
+- (UILabel *)label
 {
-    CGRect rect = CGRectMake(0.0f, 0.0f, self.frame.size.width, self.frame.size.height);
-    UIView *translucentView = [[UIView alloc] initWithFrame:rect];
-    translucentView.tag = translucentViewTag;
-    translucentView.backgroundColor = [UIColor blackColor];
-    translucentView.alpha = 0.5;
-    [self addSubview:translucentView];
-    
-    CGRect rect2 = CGRectMake(0.0f, 0.0f, self.frame.size.width, self.frame.size.height);
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:rect2];
-    titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.text = self.text;
-    titleLabel.tag = titleLabelTag;
-    titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.font = self.font;
-    [self addSubview:titleLabel];
+    if (_label == nil) {
+        _label           = [[UILabel alloc] init];
+        _label.textColor = [UIColor whiteColor];
+    }
+    return _label;
 }
+
+
+
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    UIView *translucentView = (UIView *)[self viewWithTag:translucentViewTag];
-    CGRect rect = CGRectMake(0.0f, 0.0f, self.frame.size.width, self.frame.size.height);
-    translucentView.frame = rect;
-    UILabel *titleLabel = (UILabel *)[self viewWithTag:titleLabelTag];
-    CGRect rect2 = CGRectMake(_titleOffsetX, 0.0f, self.frame.size.width - 2*_titleOffsetX, self.frame.size.height);
-    titleLabel.frame = rect2;
+    self.translucentView.frame = self.bounds;
+    self.label.frame           = self.bounds;
 }
-
-
-
-
 @end
+
+

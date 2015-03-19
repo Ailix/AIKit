@@ -1,4 +1,10 @@
-
+//
+//  AIPageControl.m
+//  Test03
+//
+//  Created by Ailix on 14-7-9.
+//  Copyright (c) 2014年 NC. All rights reserved.
+//
 
 #import "AIPageControl.h"
 
@@ -21,13 +27,15 @@
     self.imagePageStateHighlighted = nil;
 }
 
-- (void)setImagePageStateHighlighted:(UIImage *)image {  // 设置正常状态点按钮的图片
+- (void)setImagePageStateHighlighted:(UIImage *)image {
+   
     _imagePageStateHighlighted = image;
     [self updateDots];
 }
 
-- (void)setImagePageStateNormal:(UIImage *)image { // 设置高亮状态点按钮图片
-    _imagePageStateNormal = image;
+- (void)setImagePageStateNormal:(UIImage *)image {
+   
+    _imagePageStateNormal = image ;
     [self updateDots];
 }
 
@@ -42,9 +50,7 @@
     [self updateDots];
 }
 
-
-
-- (void)updateDots { // 更新显示所有的点按钮
+- (void)updateDots {
     
     if (_imagePageStateNormal || _imagePageStateHighlighted)
     {

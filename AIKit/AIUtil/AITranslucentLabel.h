@@ -1,14 +1,38 @@
 
 
 #import <UIKit/UIKit.h>
+#import "AITranslucentLabelBuilder.h"
+
+typedef void(^AITranslucentLabelBuilderBlock)(AITranslucentLabelBuilder *builder);
+
 
 @interface AITranslucentLabel : UIView
 
-@property(nonatomic,copy)   NSString           *text;             // default is nil
-@property(nonatomic,retain) UIFont             *font;            // default is nil (system font 17 plain)
-@property(nonatomic,retain) UIColor            *textColor;      // default is nil (text draws white)
-@property(nonatomic)        NSTextAlignment    textAlignment;  // default is NSTextAlignmentLeft
-@property(nonatomic)        CGFloat            alphaValue;    // animatable. default is 0.5
-@property(nonatomic)        CGFloat            titleOffsetX; //default is 0.0f
+/** 文本 */
+@property(nonatomic,copy)   NSString           *text;
+
+/** 字体 */
+@property(nonatomic,strong) UIFont             *font;
+
+/** 文本颜色 */
+@property(nonatomic,strong) UIColor            *textColor;
+
+/** 对齐方式 */
+@property(nonatomic)        NSTextAlignment    textAlignment;
+
+/** 透明度 */
+@property(nonatomic)        CGFloat            alphaValue;
+
+
+/**
+ *  构造方法
+ *
+ *  @param builderBlock 构造器代码块
+ *
+ *  @return AITranslucentLabel实例对象
+ */
++ (instancetype)labelWithBuilder:(AITranslucentLabelBuilderBlock)builderBlock;
+
 
 @end
+
