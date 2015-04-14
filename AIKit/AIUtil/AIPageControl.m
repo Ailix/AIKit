@@ -1,10 +1,3 @@
-//
-//  AIPageControl.m
-//  Test03
-//
-//  Created by Ailix on 14-7-9.
-//  Copyright (c) 2014年 NC. All rights reserved.
-//
 
 #import "AIPageControl.h"
 

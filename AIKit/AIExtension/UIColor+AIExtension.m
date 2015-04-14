@@ -13,12 +13,12 @@
 @implementation UIColor (AIExtension)
 
 
-+ (UIColor *)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b
++ (instancetype)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b
 {
     return [self ai_colorWithR:r G:g B:b alpha:1.];
 }
 
-+ (UIColor *)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha
++ (instancetype)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha
 {
     CGFloat red   = r/0xFF;
     CGFloat green = g/0xFF;
@@ -27,13 +27,13 @@
     return [self colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
-+ (UIColor *)ai_colorWithRGBHex:(UInt32)hex
++ (instancetype)ai_colorWithRGBHex:(UInt32)hex
 {
     
     return [self ai_colorWithRGBHex:hex alpha:1.];
 }
 
-+ (UIColor *)ai_colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha
++ (instancetype)ai_colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha
 {
     int r = (hex >> 16) & 0xFF;
     int g = (hex >> 8) & 0xFF;
@@ -42,7 +42,7 @@
     return [self ai_colorWithR:r G:g B:b alpha:alpha];
 }
 
-+ (UIColor *)ai_randomColor
++ (instancetype)ai_randomColor
 {
     NSInteger r = arc4random_uniform(255);
     NSInteger g = arc4random_uniform(255);

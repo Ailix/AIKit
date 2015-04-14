@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5801DD2F1ADD323D009DAEB8 /* UIViewController+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5801DD2E1ADD323D009DAEB8 /* UIViewController+AIExtension.m */; };
 		580312681ABAFB6600D22DB7 /* NSDate+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */; };
 		580312691ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803124E1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m */; };
 		5803126A1ABAFB6600D22DB7 /* NSString+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5801DD2D1ADD323D009DAEB8 /* UIViewController+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AIExtension.h"; sourceTree = "<group>"; };
+		5801DD2E1ADD323D009DAEB8 /* UIViewController+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AIExtension.m"; sourceTree = "<group>"; };
 		5803124A1ABAFB6600D22DB7 /* AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIExtension.h; sourceTree = "<group>"; };
 		5803124B1ABAFB6600D22DB7 /* NSDate+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AIExtension.h"; sourceTree = "<group>"; };
 		5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AIExtension.m"; sourceTree = "<group>"; };
@@ -105,22 +108,24 @@
 			isa = PBXGroup;
 			children = (
 				5803124A1ABAFB6600D22DB7 /* AIExtension.h */,
+				5803124F1ABAFB6600D22DB7 /* NSString+AIExtension.h */,
+				580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */,
 				5803124B1ABAFB6600D22DB7 /* NSDate+AIExtension.h */,
 				5803124C1ABAFB6600D22DB7 /* NSDate+AIExtension.m */,
 				5803124D1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.h */,
 				5803124E1ABAFB6600D22DB7 /* NSDateFormatter+AIExtension.m */,
-				5803124F1ABAFB6600D22DB7 /* NSString+AIExtension.h */,
-				580312501ABAFB6600D22DB7 /* NSString+AIExtension.m */,
 				580312531ABAFB6600D22DB7 /* UIColor+AIExtension.h */,
 				580312541ABAFB6600D22DB7 /* UIColor+AIExtension.m */,
+				580312571ABAFB6600D22DB7 /* UIStoryboard+AIExtension.h */,
+				580312581ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m */,
+				5801DD2D1ADD323D009DAEB8 /* UIViewController+AIExtension.h */,
+				5801DD2E1ADD323D009DAEB8 /* UIViewController+AIExtension.m */,
+				580312591ABAFB6600D22DB7 /* UIView+AIExtension.h */,
+				5803125A1ABAFB6600D22DB7 /* UIView+AIExtension.m */,
 				580312511ABAFB6600D22DB7 /* UIButton+AIExtension.h */,
 				580312521ABAFB6600D22DB7 /* UIButton+AIExtension.m */,
 				580312551ABAFB6600D22DB7 /* UILabel+AIExtension.h */,
 				580312561ABAFB6600D22DB7 /* UILabel+AIExtension.m */,
-				580312571ABAFB6600D22DB7 /* UIStoryboard+AIExtension.h */,
-				580312581ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m */,
-				580312591ABAFB6600D22DB7 /* UIView+AIExtension.h */,
-				5803125A1ABAFB6600D22DB7 /* UIView+AIExtension.m */,
 			);
 			path = AIExtension;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				580312731ABAFB6600D22DB7 /* AITranslucentLabelBuilder.m in Sources */,
 				58F416A11A332011003FDD20 /* ViewController.m in Sources */,
 				5803126E1ABAFB6600D22DB7 /* UIStoryboard+AIExtension.m in Sources */,
+				5801DD2F1ADD323D009DAEB8 /* UIViewController+AIExtension.m in Sources */,
 				58F4169E1A332011003FDD20 /* AppDelegate.m in Sources */,
 				580312721ABAFB6600D22DB7 /* AITranslucentLabel.m in Sources */,
 				58F4169B1A332011003FDD20 /* main.m in Sources */,

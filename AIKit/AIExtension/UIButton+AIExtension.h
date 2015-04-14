@@ -1,10 +1,4 @@
-//
-//  UIButton+AIExtension.h
-//  UIKitCatalog
-//
-//  Created by Ailix on 15/3/7.
-//  Copyright (c) 2015年 Ailix. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

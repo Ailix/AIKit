@@ -1,10 +1,4 @@
-//
-//  NSString+AIExtension.m
-//  SelfPage
-//
-//  Created by alex on 14/11/24.
-//  Copyright (c) 2014年 alex. All rights reserved.
-//
+
 
 #import "NSString+AIExtension.h"
 #import <CommonCrypto/CommonDigest.h>
@@ -22,13 +16,13 @@
     return size.height;
 }
 
-- (NSString *)ai_MD5Hash
+- (instancetype)ai_MD5Hash
 {
     if(self == nil || [self length] == 0)
         return nil;
     const char *cString = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(cString, strlen(cString), result);
+    CC_MD5(cString, (CC_LONG)strlen(cString), result);
     return [NSString stringWithFormat:
                    @"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
                    result[0], result[1], result[2], result[3],
@@ -41,7 +35,7 @@
 
 
 
--(NSString *)ai_URLEncodingUTF8String{
+-(instancetype)ai_URLEncodingUTF8String{
     NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                                              (CFStringRef)self,
                                                                                              NULL,
@@ -50,7 +44,7 @@
     return result;
 }
 
--(NSString *)ai_URLDecodingUTF8String{
+-(instancetype)ai_URLDecodingUTF8String{
     NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
                                                                                                              (CFStringRef)self,
                                                                                                              CFSTR(""),
@@ -59,7 +53,7 @@
 }
 
 
--(NSString *)ai_trimHead
+-(instancetype)ai_trimHead
 {
     NSInteger i;
     NSCharacterSet *cs = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -70,7 +64,7 @@
     return [self substringFromIndex: i];
 }
 
--(NSString *)ai_trimTail
+-(instancetype)ai_trimTail
 {
     NSInteger i;
     NSCharacterSet *cs = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -81,7 +75,7 @@
     return [self substringToIndex: (i+1)];
 }
 
-- (NSString *)ai_trimBoth
+- (instancetype)ai_trimBoth
 {
     return [[self ai_trimHead] ai_trimTail];
 }

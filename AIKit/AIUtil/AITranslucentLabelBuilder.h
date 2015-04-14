@@ -1,10 +1,4 @@
-//
-//  AITranslucentLabelBuilder.h
-//  AITranslucentLabel
-//
-//  Created by Ailix on 15/3/12.
-//  Copyright (c) 2015年 Ailix. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 

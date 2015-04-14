@@ -1,10 +1,4 @@
-//
-//  UIView+AIExtension.h
-//  ModalView
-//
-//  Created by alex on 14/12/4.
-//  Copyright (c) 2014年 alex. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

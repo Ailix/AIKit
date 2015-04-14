@@ -1,10 +1,4 @@
-//
-//  NSString+AIExtension.h
-//  SelfPage
-//
-//  Created by alex on 14/11/24.
-//  Copyright (c) 2014年 alex. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 @import UIKit;
@@ -13,14 +7,14 @@
 
 - (CGFloat)ai_heightWithFont:(UIFont *)aFont maxWidth:(CGFloat)maxWidth;
 
-- (NSString *)ai_MD5Hash;
+- (instancetype)ai_MD5Hash;
 
--(NSString *)ai_URLEncodingUTF8String;
--(NSString *)ai_URLDecodingUTF8String;
+-(instancetype)ai_URLEncodingUTF8String;
+-(instancetype)ai_URLDecodingUTF8String;
 
 
-- (NSString *)ai_trimHead;
-- (NSString *)ai_trimTail;
-- (NSString *)ai_trimBoth;
+- (instancetype)ai_trimHead;
+- (instancetype)ai_trimTail;
+- (instancetype)ai_trimBoth;
 
 @end

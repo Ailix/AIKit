@@ -1,10 +1,4 @@
-//
-//  AIMacro.h
-//  Create
-//
-//  Created by alex on 14/11/7.
-//  Copyright (c) 2014年 alex. All rights reserved.
-//
+
 
 #ifndef Create_AIMacro_h
 #define Create_AIMacro_h
@@ -49,21 +43,15 @@
 #undef  AI_TABBAR_HEIGHT
 #define AI_TABBAR_HEIGHT 49.
 
-/** 系统12号字体 */
-#undef  AI_SYSTEMFONT12
-#define AI_SYSTEMFONT12      [UIFont systemFontOfSize:12.]
 
-/** 系统13号字体 */
-#undef  AI_SYSTEMFONT13
-#define AI_SYSTEMFONT13      [UIFont systemFontOfSize:13.]
+/** 系统字体 */
+#undef  AI_SYSTEMFONT
+#define AI_SYSTEMFONT(size)      [UIFont systemFontOfSize:size]
 
-/** 系统15号字体 */
-#undef  AI_SYSTEMFONT15
-#define AI_SYSTEMFONT15      [UIFont systemFontOfSize:15.]
 
-/** 粗体17号字体 */
-#undef  AI_BOLDSYSTEMFONT17
-#define AI_BOLDSYSTEMFONT17  [UIFont boldSystemFontOfSize:17.]
+/** 粗体字体 */
+#undef  AI_BOLDSYSTEMFONT
+#define AI_BOLDSYSTEMFONT(size)  [UIFont boldSystemFontOfSize:size]
 
 
 #endif

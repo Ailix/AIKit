@@ -10,17 +10,17 @@
 
 @interface UIColor (AIExtension)
 
-+ (UIColor *)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b;
-+ (UIColor *)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha;
-+ (UIColor *)ai_colorWithRGBHex:(UInt32)hex;
-+ (UIColor *)ai_colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha;
++ (instancetype)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b;
++ (instancetype)ai_colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alpha;
++ (instancetype)ai_colorWithRGBHex:(UInt32)hex;
++ (instancetype)ai_colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha;
 
 /**
  *  获取随机颜色
  *
  *  @return 随机颜色实例
  */
-+ (UIColor *)ai_randomColor;
++ (instancetype)ai_randomColor;
 
 
 /** Return the red, green or blue components of the color. */

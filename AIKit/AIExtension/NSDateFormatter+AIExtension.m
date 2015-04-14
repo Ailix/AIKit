@@ -1,10 +1,4 @@
-//
-//  NSDateFormatter+AIExtension.m
-//  NSDate
-//
-//  Created by Ailix on 15/3/17.
-//  Copyright (c) 2015年 Ailix. All rights reserved.
-//
+
 
 #import "NSDateFormatter+AIExtension.h"
 
